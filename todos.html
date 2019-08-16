@@ -8,14 +8,22 @@
     <body>
         <div id="app">
             <ul></ul>
-            <input 
-              name="itemToAdd"
-              placeholder="Informe a nova tarefa"
-            />
-            <button type="button">
-                Adicionar
-            </button>
+            <form action="" onsubmit="javascript:return false">
+                <input 
+                  name="itemToAdd"
+                  placeholder="Informe a nova tarefa"
+                />
+                <button type="button">
+                    Adicionar
+                </button>
+            </form>
         </div>
-        <script src="todos.js"></script>
+        <!-- Versão com js quebrado em níveis de abstração-->
+        <script src="src/model.js"></script>
+        <script src="src/view.js"></script>
+        <script src="src/controller.js"></script>
+        <!-- Versão com js em arqivo único
+            <script src="todos.js"></script>
+        -->
     </body>
 </html>
